@@ -177,7 +177,7 @@ def has_valid_email_domain(email):
 def send_email(receiver_email,name):
     # Sender and receiver email addresses
     sender_email = "aditya_khode_entc@moderncoe.edu.in"  # Replace with your email address
-    password = "Aditya1996"  # Replace with your email password
+    password = "pass@123"  # Replace with your email password
 
     # Create the email message
     message = MIMEMultipart()
@@ -186,7 +186,7 @@ def send_email(receiver_email,name):
     message["Subject"] = "Welcome to Attendance Monitoring System"
 
     # Add the welcome message
-    welcome_message = "Hello" + name + """
+    welcome_message = "Hello " + name + """
     Welcome to the Attendance Monitoring System app! We are delighted to have you on board.
 
     Thank you for joining our community.
