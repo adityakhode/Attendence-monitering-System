@@ -117,7 +117,7 @@ def complete_signup():
         db.display()
         # Display a success message
         tkmb.showinfo(title="Signup Successful", message=f"User {name} with email {email} and phone number {phone} has been registered successfully!")
-        send_email(email)
+        send_email(email,name)
         
 def login():
     global user_entry, user_pass
