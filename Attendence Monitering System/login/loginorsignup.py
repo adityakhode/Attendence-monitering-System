@@ -117,7 +117,8 @@ def complete_signup():
         db.display()
         # Display a success message
         tkmb.showinfo(title="Signup Successful", message=f"User {name} with email {email} and phone number {phone} has been registered successfully!")
-        send_email(email)       
+        send_email(email)
+        
 def login():
     global user_entry, user_pass
     entered_username = user_entry.get()  # Get the user-entered username
@@ -127,7 +128,6 @@ def login():
 
 
     if validate_username and validate_password:
-        tkmb.showinfo(title="Login Successful", message="You have logged in Successfully")
         with open("username.txt", "w") as file:
             file.write(db.get_email_id_by_value(entered_username))
             file.close()
